@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+ <link rel="stylesheet" href="style_form.css">
+ <link rel="stylesheet" href="style_index.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<body> 
+    <div class="top">
+      <div class="header">
+        <img src="logo.png" style="float: left; width: 100px;">
+          <h1>Chess Website</h1>
+           </div> 
+  <div class="nav" id="topnav">
+    <div class="nav_res">
+    <a href="index.html" ><i class="fa fa-fw fa-home"></i>Home</a>
+    <a href="form.html"  class="active">Registration</a>
+    <a href="chess_pieces.html" >Chess pieces</a>
+    <a href="chess_rules.html" >Chess Rules</a>
+    <a href="chess_combition.html">Chess Competition</a> 
+    </div> 
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="nav_menu()">&#9776;</a>
+  </div>
+  </div >
+      <div class="head-back">
+      <h1 id="D1">Welcome to Chess Website</h1>
+  </div>
+
+
+    <div class="content">
+<fieldset >
+    <legend>Registration form</legend>
+        <form id="form" onsubmit="return validate_pass();return validate_tle() " action="index.html">
+        <div class="row">
+        <div class="col-25">
+        <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+            <input type="text"  name="fn" placeholder="Your first name..." pattern="^[a-zA-Z]+$" title="must entire only alphabets" required>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+            <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" name="ln" placeholder="Your last name..." pattern="^[a-zA-Z]+$" title="must entire only alphabets" required>
+            </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                <label for="mail">e-mail</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" name="mail" placeholder="Your e-mail..."  required>
+                </div>
+                </div>
+                
+            <div class="row">
+                <div class="col-25">
+                <label for="psw">password</label>
+                </div>
+                <div class="col-75">
+                  <input type="password" id="psw" name="psw" placeholder="Your password..." pattern="^(?=[A-Z]{1})(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#&*_-]).{8}$"
+                   title="Must start with uppercase letter,contain lowercase letter,one special character,at least one number and no less or more 8 characters" required>
+                    <br><br> <input type="checkbox" onclick="show_password()">Show Password
+
+                </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                    <label for="mobile">mobile number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" name="mobile" placeholder="Your mobile number..." pattern="^([0]{1})([1]{1})([0-9]{9})$" required >
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                        <label for="address">address</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="address" placeholder="Your address...">
+                        </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-25">
+                            <label for="gender">gender</label>
+                            </div>
+                            <div class="col-75">
+                                <select>
+                                    <option value="male"> male </option>
+                                    <option value="female"> female </option>
+                                </select> 
+                            </div>
+                            </div>
+
+        <div class="row">
+            <input type="submit" value="Submit" name="sub" >
+            <input type="reset" value="Reset" name="sub" >
+        </div>
+        </form>
+        </div>
+    </fieldset >
+    <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="capital" class="invalid">A <b>Start capital (uppercase)</b> letter</p>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="special" class="invalid">A <b>special character</b></p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">no less or more <b>8 characters</b></p>
+      </div>
+
+    <div class="footer">
+        <h2>Contact:</h2>
+        <div class="fo-con">
+      <p><strong>Mobile</strong>:01019856480</p>
+      <p><strong>Email</strong>:ahmed195103@feng.bu.edu.eg</p> 
+      <p><strong>linkedin</strong>: Ahmed Emad Elsherbini </p>
+    </div>
+    </div>
+
+<script src="project.js"></script>
+
+</body>
+</html>
