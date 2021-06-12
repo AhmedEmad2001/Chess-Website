@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="chess_pieces.css"> 
+    </head>
+    <body>
+        <div class="top">
+            <div class="header">
+                <a href="index.html">
+                    <img src="logo.png"   style="float: left; width: 100px;">
+                  </a>
+                <h1>Chess Website</h1>
+                   
+                  <div class="nav" id="topnav">
+                    <div class="nav_res">
+                    <a href="index.html" ><i class="fa fa-fw fa-home"></i>Home</a>
+                    <a href="form.html">Registration</a>
+                    <a href="chess_pieces.html"class="active">Chess pieces</a>
+                    <a href="chess_rules.html">Chess Rules</a>
+                    <a href="chess_combition.html" >Chess Competition</a> 
+                    </div> 
+                    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="nav_menu()">&#9776;</a>
+                  </div>
+                  </div>
+          </div >
+          
+          <div class="head-back">
+          <h1 id="D1">Welcome to Chess Website</h1>
+  
+          <div id="D1">
+              <button class="join" > 
+                  <a href="form.html">Lets join us</a>
+              </button>
+          </div>
+      </div>
+  
+          <div class="row"> 
+              <div class="card">
+                <h2>Chess Pieces</h2>
+                <div class="img-galary" >
+          <p>Each piece in chess has its own unique powers. To become great at chess you must understand these powers and how they can be used to win the game. For each individual chess piece we will look at the starting position, movements, notation, general overview, and some additional pro tips to speed up the learning curve</p>
+          <P>There are 6 unique chess pieces. They are:</P>
+          <div class="responsive">
+                  <div class="galary">
+                 <img src="king-chess-piece.jpg"   >
+                  <div class="desc">King </div>
+                  </div>
+              </div>
+          
+          <div class="responsive">
+                  <div class="galary">
+                 <img src="rook-chess-piece.jpg"  >
+                  <div class="desc">Rook</div>
+                  </div>
+              </div>
+          
+          <div class="responsive">
+                  <div class="galary">
+                 <img src="bishop-chess-piece.jpg"  >
+                  <div class="desc">Bishop </div>
+                  </div>
+              </div>
+          
+          
+          <div class="responsive">
+                  <div class="galary">
+                 <img src="queen-chess-piece.jpg">
+                  <div class="desc">Queen</div>
+                  </div>
+              </div>
+          
+          
+          <div class="responsive">
+                  <div class="galary">
+                 <img src="knight-chess-piece.jpg"  >
+                  <div class="desc">Knight</div>
+                  </div>
+              </div>
+          
+          <div class="responsive">
+                  <div class="galary">
+                <img src="pawn-chess-piece.jpg">
+                  <div class="desc">Pawn</div>
+                  </div>
+              </div>
+          
+          </div>
+          </div>
+          
+              <div class="small-header">
+          <h2 >The King</h2>
+          <img src="king-chess-piece.jpg"  >
+          </div>
+            <div class="card">
+                <h2>overview</h2>
+                <div class="content" >
+          <p>
+          The white chess king begins on the e1 square and the black king begins on the e8 square. This should be the opposite color of the king.
+          If the e1 square is white, then you will need to rotate the board so the e1 square is dark.
+          </p>
+          </div>
+          </div>
+            <div class="card">
+                <h2>Movement</h2>
+                <div class="content" >
+          <p>
+              The king can move one square in any direction. 
+          </p>
+          </div>
+          </div>
+          
+          <div class="small-header">
+          <h2 >The Rook</h2>
+          <img src="rook-chess-piece.jpg">
+          </div>
+            <div class="card">
+                <h2>overview</h2>
+                <div class="content" >
+          <p>
+          Each side starts with two rooks located in the four corners of the board. Rooks are worth 5 points in chess.
+          While points don’t tell the entire story in a chess game, it does give some indication for how strong a piece is.
+          </p>
+          </div>
+          </div>
+            <div class="card">
+                <h2>Movement</h2>
+                <div class="content" >
+          <p>
+          The rook can move any number of squares up, down, and across.
+          It can’t jump over material so at the beginning of the game, it also can’t move.
+          </p>
+          </div>
+          </div>
+          
+          <div class="small-header">
+          <h2 >The Bishop</h2>
+           <img src="bishop-chess-piece.jpg"  >
+          </div>
+            <div class="card">
+                <h2>overview</h2>
+                <div class="content" >
+          <p>
+              You begin with two bishops. They are located right next to the king and the queen.
+              You will have one bishop that is on the light squares and one bishop on the dark squares. 
+          </p>
+          </div>
+          </div>
+            <div class="card">
+                <h2>Movement</h2>
+                <div class="content" >
+          <p>
+              The bishop can move diagonally as many squares as it would like, without jumping over another piece.
+          </p>
+          </div>
+          </div>
+          
+          <div class="small-header">
+          <h2 >The Queen</h2>
+          <img src="queen-chess-piece.jpg">
+          </div>
+            <div class="card">
+                <h2>overview</h2>
+                <div class="content" >
+          <p>
+              The queens begin on the d1 and d8 squares. This should be the same color as the queen.
+          </p>
+          </div>
+          </div>
+            <div class="card">
+                <h2>Movement</h2>
+                <div class="content" >
+          <p>
+              The queen combines the moves from the bishop and rook. It can move any
+              squares in a diagonal direction, or go up, down, and sideways as many squares without jumping over another piece.
+          </p>
+          
+          </div>
+          </div>
+          
+          <div class="small-header">
+          <h2 >The Knight</h2>
+          <img src="knight-chess-piece.jpg"  >
+          </div>
+            <div class="card">
+                <h2>overview</h2>
+                <div class="content" >
+          <p>
+              You begin with two knights. They will be located in between your rook and bishops on squares b1/g1 for white and b8/g8 for black.
+          </p>
+          </div>
+          </div>
+            <div class="card">
+                <h2>Movement</h2>
+                <div class="content" >
+          <p>
+              The knight is the only piece on the board that can jump over another piece.
+              In that way, the knight has a leg up on the queen, but controls fewer total squares than the queen can.
+          </p>
+          </div>
+          </div>
+          
+          <div class="small-header">
+          <h2 >The Pawn </h2>
+          <img src="pawn-chess-piece.jpg">
+          </div>
+            <div class="card">
+                <h2>overview</h2>
+                <div class="content" >
+          <p>
+              While the pawn is the weakest piece on the board, it serves a vital role in the game. 
+              Most of the early part of the game will be centered around the pawn structure and controlling the center of the board with your pawns.
+          </p>
+          </div>
+          </div>
+            <div class="card">
+                <h2>Movement</h2>
+                <div class="content" >
+          <p>
+              TThe pawn is the only piece on the chess board that can’t go backwards.
+              It is also the only piece where you can’t move it the same number of squares the entire game.
+          </p>
+          </div>
+          </div>
+          
+
+<div class="footer">
+    <h2>Contact:</h2>
+    <div class="fo-con">
+  <p><strong>Mobile</strong>:01019856480</p>
+  <p><strong>Email</strong>: ahmed195103@feng.bu.edu.eg</p> 
+  <p><strong>linkedin</strong>: Ahmed Emad Elsherbini </p>
+</div>
+</div>
+
+
+<script src="project.js"></script>
+
+    </body>
+</html>

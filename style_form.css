@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+ }
+body{ 
+  font-family:Arial;
+  padding:  0px;
+  background-color: rgb(84, 165, 135); 
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url("chess1.jpg") ; 
+  background-repeat:round;
+}
+
+.header {
+  padding: 10px;
+  text-align: center; 
+  color: #ddd;
+  background-color: #394449;
+  background-image: url("chess_back.jpg") ; 
+  background-repeat:round;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+.nav {
+  overflow: hidden; 
+  background-color: rgba(90, 89, 89, 0.7);
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none; 
+}
+
+a.active {
+  color: rgb(173, 210, 224); 
+  border-bottom:inset #04AA6D;
+}
+
+.nav .icon {color: #ddd;
+  display: none;
+  border-radius: 15px;
+  background-color: black;
+}
+.nav a:hover:not(.active) {
+  background-color: red;
+  color: #f5eded; 
+  border-bottom: inset red;
+}
+#D1{
+  color: goldenrod;
+  text-align:center;
+  position:relative;
+  animation:example1;
+  animation-duration:2s;
+  animation-fill-mode:forwards;
+  }
+.join { 
+  border-radius: 25px;
+  padding: 12px 12px;
+  width: 150px;
+  font-size: 20px;
+  text-align: center;
+  background-color: red;
+  border: none; 
+}
+.join a{text-decoration: none;
+color: black;}
+
+fieldset{border: 1px solid lightslategrey ;
+    font-size:x-large;
+padding: 35px;
+}
+input[type=text],input[type=email]
+,input[type=password],input[type=tel],select
+{outline: none;
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 25px;
+resize: vertical;
+}
+ label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: large;
+    text-decoration: solid;
+    border-radius: 15px;
+}
+input[type=submit]
+{margin-top:20px;
+background-color:#4caf50;
+color:white;
+width: 120px;
+border-radius: 25px;
+padding: 12px 20px;
+float: right;
+border: none; 
+}
+
+input[type=reset]
+{margin-top:20px;
+  margin-right: 15px;
+background-color:skyblue;
+color:white;
+width: 120px;
+border-radius: 25px;
+padding: 12px 20px;
+float: right;
+border: none; 
+}
+
+input[type=submit]:hover
+{background-color: #45a049;}
+input[type=reset]:hover
+{background-color: rgb(54, 54, 167);}
+.content {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.col-25{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75{
+float: left;
+width:75%;
+margin-top: 6px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+  color:rgb(223, 221, 221);
+  padding: 8px;
+  font-size: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px; 
+  background-image: url("footer2.jpg") ;
+  background-size: 33.33%;
+  background-repeat:round;
+}
+.fo-con{
+  text-align: left;
+  margin-left: 50px;
+}
+#message {
+    display:none;
+    background: #f2f2f2;
+    border-radius: 25px;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+  @media screen and (max-width:600px) {
+    .col-25,.col-75,input[type=submit],input[type=reset]
+    {width: 100%;
+    margin-top: 20px;}
+    input[type=reset]{margin-right:auto;}
+}
+
+@keyframes example1{
+  0%{top:-50px;opacity:0}
+  100%{top: 12px; opacity:1}
+  }
+
+@media screen and (max-width: 1100px) {
+  .footer{background-size: 65%;}
+}
+@media screen and (max-width:600px)
+{ 
+  .footer{background-size: 100%;}
+  .fo-con{margin: 0;}
+}
+
+@media screen and (max-width: 720px) {
+.nav a:not(:first-child) {
+  display: none;
+}
+.nav a.icon {
+  float: right;
+  display: block;
+}
+}
+
+@media screen and (max-width: 720px) {
+.nav.nav_res {position: relative;}
+.nav.nav_res .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.nav.nav_res a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+.nav.nav_res {float: none;}
+.nav.nav_res {position: relative;}
+.nav.nav_res {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+}
