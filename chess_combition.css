@@ -26,6 +26,7 @@
     font-size: 50px;
   }
   
+
   .nav {
     overflow: hidden; 
     background-color: rgba(90, 89, 89, 0.7);
@@ -142,7 +143,8 @@ td:hover{background-color: teal;}
     width: 415px;}
     .fo-con{margin: 0;} 
     .header{width: 415px;}
-    .table_res {width: 300px;}
+    .tab table{width: 300px;}
+    .head-back{margin-left: 25px;}
   }
 
 @media screen and (max-width: 720px) {
