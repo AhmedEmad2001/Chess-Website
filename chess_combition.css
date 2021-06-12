@@ -8,15 +8,17 @@
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-image: url("chess1.jpg") ; 
+    background-size: auto;
     background-repeat:round;
   }
   
-  .header {
-    padding: 10px;
+  .header {width: 100%;
+    padding: 0.5px;
     text-align: center; 
     color: #ddd;
     background-color: #394449;
-    background-image: url("chess_back.jpg") ; 
+    background-image: url("chess_back.jpg") ;
+    background-position: top; 
     background-repeat:round;
   }
   
@@ -24,35 +26,35 @@
     font-size: 50px;
   }
   
-  
-  
   .nav {
-    overflow: hidden;
-    background-color: black;
+    overflow: hidden; 
+    background-color: rgba(90, 89, 89, 0.7);
   }
   
   .nav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: whitesmoke;
     text-align: center;
     padding: 12px 12px;
     text-decoration: none; 
   }
-  
-  .active {
-    background-color: #04AA6D; 
+
+  a.active {
+    color: rgb(173, 210, 224); 
+    border-bottom:inset #04AA6D;
   }
   
-  .nav .icon {
+  .nav .icon {color: #ddd;
     display: none;
+    border-radius: 15px;
+    background-color: black;
   }
   .nav a:hover:not(.active) {
     background-color: red;
-    color: black;
+    color: #f5eded; 
+    border-bottom: inset red;
   }
-
-  
   
   #D1{
     color: goldenrod;
@@ -88,10 +90,13 @@ th{
 }
 tr:hover{background-color: darkgray;}
 td:hover{background-color: teal;}
-.tab table {margin: auto;
+.tab table {
+  margin-left:  auto;
+  margin-right:  auto;
   margin-top: 20px;
-  border: #aaa;
+  border:1px #aaa;
   border-collapse: collapse;
+  border-spacing: 0;
   width: 75%;
 } 
 
@@ -119,7 +124,7 @@ td:hover{background-color: teal;}
 
   .fo-con{
     text-align: left;
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   @keyframes example1{
@@ -127,12 +132,17 @@ td:hover{background-color: teal;}
     100%{top: 12px; opacity:1}
     }
 
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 900px) {
     .footer{background-size: 65%;}
   }
   @media screen and (max-width:600px)
   { 
-  .footer{background-size: 85%;}
+    .head h2 {margin-left: 15px;}
+    .footer{background-size: 120%;
+    width: 415px;}
+    .fo-con{margin: 0;} 
+    .header{width: 415px;}
+    .table_res {width: 300px;}
   }
 
 @media screen and (max-width: 720px) {
@@ -143,7 +153,7 @@ td:hover{background-color: teal;}
     float: right;
     display: block;
   }
-  .tab table{width: 30%;}
+  
 }
 
 @media screen and (max-width: 720px) {

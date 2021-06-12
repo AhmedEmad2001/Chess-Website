@@ -27,33 +27,35 @@
   
   
   .nav {
-    overflow: hidden;
-    background-color: black;
+    overflow: hidden; 
+    background-color: rgba(90, 89, 89, 0.7);
   }
   
   .nav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: whitesmoke;
     text-align: center;
     padding: 12px 12px;
     text-decoration: none; 
   }
-  
-  .active {
-    background-color: #04AA6D; 
+
+  a.active {
+    color: rgb(173, 210, 224); 
+    border-bottom:inset #04AA6D;
   }
   
-  .nav .icon {
+  .nav .icon {color: #ddd;
     display: none;
+    border-radius: 15px;
+    background-color: black;
   }
   .nav a:hover:not(.active) {
     background-color: red;
-    color: black;
+    color: #f5eded; 
+    border-bottom: inset red;
   }
 
-  
-  
   #D1{
     color: goldenrod;
     text-align:center;
@@ -128,7 +130,8 @@
   }
   @media screen and (max-width:600px)
   { 
-  .footer{background-size: 85%;}
+  .footer{background-size: 100%;}
+  .fo-con{margin: 0;}
   }
 
 @media screen and (max-width: 720px) {
