@@ -168,6 +168,11 @@ color: black;
     background-size: 33.33%;
     background-repeat:round;
   }
+  .fo-con{
+    text-align: left;
+    margin-left: 50px;
+  }
+
    #D1{
   color: goldenrod;
   text-align:center;
@@ -211,10 +216,6 @@ ul{width: 100%;}*/
 .fo-con{margin: 0;}
 }
 
-.fo-con{
-  text-align: left;
-  margin-left: 50px;
-}
 .small-header{   
   color: whitesmoke;
   text-align: center; 
@@ -295,7 +296,7 @@ div.gallery img {
   margin-right: auto;
   margin-top:75px;
 }
-   th, td {
+ /*  th, td {
     border-width: 1px;
     border-style: solid;
     border-color: rgb(221, 221, 221);
@@ -314,7 +315,7 @@ td:hover{background-color: teal;}
   border: #aaa;
   border-collapse: collapse;
   width: 75%;
-} 
+} */
 
 
   

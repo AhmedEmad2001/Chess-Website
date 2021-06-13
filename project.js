@@ -13,9 +13,6 @@ function nav_menu() {
   var special = document.getElementById("special");
   var number = document.getElementById("number");
   var length = document.getElementById("length");
-  
-  var number_mob =document.getElementById("number_mob");
-  var length_mob = document.getElementById("length_num");
 
   myInput.onfocus = function() {
     document.getElementById("message").style.display = "block"; 
@@ -82,19 +79,30 @@ else {
   x.type = "password";
 }
 }
+
+function show_conpassword() {
+  var x = document.getElementById("conpsw");
+  if (x.type === "password") {
+    x.type = "text";
+  }
+  else {
+    x.type = "password";
+  }
+  }
+
 function validate_tle()
 {
 let y=document.forms['form']['mobile'].value;
 let pat=/^([0]{1})([1]{1})([0-9]{9})$/
 if(pat.test(y))
 {
-  alert("Submit Succsefully")
+ // alert("Submit Succsefully")
   return true;
 }
 else
 {
   alert(
-  "The enter number not valid\n\n valid number must:\n start with 0.\nand no less or more 11 numbers\nnumber as:01234567891");
+  "The enter number not valid\n\n valid number must:\n start with 01.\nand no less or more 11 numbers\nnumber as:01234567891");
   return false;
 }
 }
@@ -106,7 +114,7 @@ function validate_pass()
     
     if(pat.test(x))
     {
-        alert("Submit Succsefully");
+        //alert("Submit Succsefully");
       return true;
     }
     else
@@ -116,3 +124,46 @@ function validate_pass()
         return false;
     }
 }
+
+function validate_conpass()
+{
+    let x=document.forms['form']['conpsw'].value; 
+    let y=document.forms['form']['psw'].value; ;
+    if(y===x)
+    {
+       // alert("Submit Succsefully");
+     return true;
+    }
+    else
+    {
+       alert("password not matching");
+        return false;
+    }
+}
+function validate_email()
+{
+    let x=document.forms['form']['email'].value;
+    let pat=/^[A-Za-z]+\S+@\S+\.[c]{1}[o]{1}[m]{1}/;
+    
+    if(pat.test(x))
+    {
+//      alert("You have entered a valid email address!");
+        //alert("Submit Succsefully");
+      return true;
+    }
+    else
+    {
+      alert("You have entered an invalid email address!\nvalid email must be as:username@orgnization.com\nusername:must be more than one character\nand must not start with digit"); 
+         return false;
+    }
+}
+
+function valid() {
+  if(validate_email()===true && validate_pass()===true && validate_conpass()===true && validate_tle()===true)
+  {alert("Submit Succsefully");
+    return true;}
+  else
+  {return false;}
+}
+
+
