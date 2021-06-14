@@ -45,7 +45,7 @@
         <label for="fname">First Name</label>
         </div>
         <div class="col-75">
-            <input type="text"  name="fn" placeholder="Your first name..." pattern="^[a-zA-Z]+$" title="must entire only alphabets characters" required>
+            <input type="text"  name="fn" id="fname" placeholder="Your first name..." pattern="^[a-zA-Z]+$" title="must entire only alphabets characters" required>
         </div>
         </div>
         <div class="row">
@@ -53,7 +53,7 @@
             <label for="lname">Last Name</label>
             </div>
             <div class="col-75">
-                <input type="text" name="ln" placeholder="Your last name..." pattern="^[a-zA-Z]+$" title="must entire only alphabets characters" required>
+                <input type="text" name="ln" id="name" placeholder="Your last name..." pattern="^[a-zA-Z]+$" title="must entire only alphabets characters" required>
             </div>
             </div>
 
@@ -75,6 +75,15 @@
                    title="Must start with uppercase letter,contain lowercase letter,one special character,at least one number and no less or more 8 characters" required>
                     <br><br> <input type="checkbox" onclick="show_password()">Show Password
 
+                    <div id="message">
+                        <h3>Password must contain the following:</h3>
+                        <p id="capital" class="invalid">A <b>Start capital (uppercase)</b> letter</p>
+                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                        <p id="special" class="invalid">A <b>special character</b></p>
+                        <p id="number" class="invalid">A <b>number</b></p>
+                        <p id="length" class="invalid">no less or more <b>8 characters</b></p>
+                      </div>
+
                 </div>
                 </div>
 
@@ -87,6 +96,11 @@
                        title="Must be smae as password" required>
                         <br><br> <input type="checkbox" onclick="show_conpassword()">Show Password
 
+                        <div id="message-con"> 
+                            <p id="confirmed" class="invalid"> <b>Password is matching</b></p>
+ 
+                          </div>
+    
                     </div>
                     </div>
 
@@ -113,10 +127,14 @@
                             <label for="gender">gender</label>
                             </div>
                             <div class="col-75">
-                                <select>
+                                <input type="radio" name="gender" required>
+                                <label for="gender">male</label>
+                                <input type="radio" name="gender" required>
+                                <label for="gender">female</label>
+                            <!--   <select>
                                     <option value="male"> male </option>
                                     <option value="female"> female </option>
-                                </select> 
+                                </select> --> 
                             </div>
                             </div>
 
@@ -127,14 +145,14 @@
         </form>
         </div>
     </fieldset >
-    <div id="message">
+  <!--  <div id="message">
         <h3>Password must contain the following:</h3>
         <p id="capital" class="invalid">A <b>Start capital (uppercase)</b> letter</p>
         <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
         <p id="special" class="invalid">A <b>special character</b></p>
         <p id="number" class="invalid">A <b>number</b></p>
         <p id="length" class="invalid">no less or more <b>8 characters</b></p>
-      </div>
+      </div>   -->
 
     <div class="footer">
         <h2>Contact:</h2>

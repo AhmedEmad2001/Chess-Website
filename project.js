@@ -14,6 +14,19 @@ function nav_menu() {
   var number = document.getElementById("number");
   var length = document.getElementById("length");
 
+  var myInputcon = document.getElementById("conpsw");
+  var confirmed = document.getElementById("confirmed");
+  myInputcon.onfocus = function con(){
+    
+   {
+    document.getElementById("message-con").style.display = "block"; 
+  }
+}
+  myInputcon.onblur = function con() {
+    {
+    document.getElementById("message-con").style.display = "none"; 
+  }
+}
   myInput.onfocus = function() {
     document.getElementById("message").style.display = "block"; 
   }
@@ -125,6 +138,7 @@ function validate_pass()
     }
 }
 
+
 function validate_conpass()
 {
     let x=document.forms['form']['conpsw'].value; 
@@ -135,10 +149,21 @@ function validate_conpass()
      return true;
     }
     else
-    {
+    { 
        alert("password not matching");
         return false;
     }
+}
+myInputcon.onkeyup = function con() {
+  
+  if(myInputcon.value === myInput.value) {
+    confirmed.classList.remove("invalid");
+    confirmed.classList.add("valid");
+  } else {
+    confirmed.classList.remove("valid");
+    confirmed.classList.add("invalid");
+  }
+
 }
 function validate_email()
 {
@@ -158,6 +183,7 @@ function validate_email()
     }
 }
 
+ 
 function valid() {
   if(validate_email()===true && validate_pass()===true && validate_conpass()===true && validate_tle()===true)
   {alert("Submit Succsefully");

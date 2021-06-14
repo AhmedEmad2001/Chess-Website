@@ -77,7 +77,7 @@ fieldset{border: 1px solid lightslategrey ;
 padding: 35px;
 }
 input[type=text],input[type=email]
-,input[type=password],input[type=tel],select,textarea
+,input[type=password],input[type=tel],textarea/*,select*/
 {outline: none;
 width: 100%;
 padding: 12px;
@@ -85,6 +85,8 @@ border: 1px solid #ccc;
 border-radius: 25px;
 resize: vertical;
 }
+input[type=radio]{margin-left: 15px;
+padding: 35px;}
  label{
     padding: 12px 12px 12px 0;
     display: inline-block;
@@ -155,7 +157,7 @@ margin-top: 6px;
   text-align: left;
   margin-left: 50px;
 }
-#message {
+#message,#message-con {
     display:none;
     background: #f2f2f2;
     border-radius: 25px;
@@ -165,7 +167,7 @@ margin-top: 6px;
     margin-top: 10px;
   }
   
-  #message p {
+  #message p,#message-con p {
     padding: 10px 35px;
     font-size: 18px;
   }
